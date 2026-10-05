@@ -41,7 +41,7 @@
     <section class="report-grid">
         <article class="panel">
             <div class="panel-header"><div><h2>Pendapatan per Metode Bayar</h2><p>Komposisi pembayaran periode ini</p></div></div>
-            @forelse($paymentMethods as $method)
+            @forelse($paymentMethods->take(2) as $method)
                 <div class="report-method-row"><div><strong>{{ $method->payment_method }}</strong><small>{{ $method->transactions_count }} transaksi</small></div><b>Rp {{ number_format($method->revenue, 0, ',', '.') }}</b></div>
             @empty
                 <p class="empty-state">Ringkasan metode pembayaran akan muncul setelah transaksi tersedia.</p>
@@ -49,7 +49,7 @@
         </article>
         <article class="panel">
             <div class="panel-header"><div><h2>Menu Terlaris</h2><p>Berdasarkan jumlah item terjual</p></div></div>
-            @forelse($bestSellers as $menu)
+            @forelse($bestSellers->take(2) as $menu)
                 <div class="bar-row"><span>{{ $menu->name }}</span><div class="bar-track"><span style="width:{{ max(3, round($menu->quantity / max(1, (int) $bestSellers->max('quantity')) * 100)) }}%"></span></div><b>{{ $menu->quantity }} terjual</b></div>
             @empty
                 <p class="empty-state">Menu terlaris akan muncul setelah transaksi tersedia.</p>

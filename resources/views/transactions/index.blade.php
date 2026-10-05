@@ -15,14 +15,12 @@
     <section class="panel">
         <form method="get" action="{{ route('transactions.index') }}">
             <div class="filter-bar">
-                <div class="filter-field search-control"><x-icon name="search" /><input class="input-control" type="search" name="search" value="{{ request('search') }}" placeholder="Cari nomor invoice..."></div>
-                <div class="filter-field"><label class="sr-only" for="method-filter">Metode pembayaran</label><select id="method-filter" class="select-control" name="method"><option value="">Semua metode</option>@foreach(['Tunai','QRIS','Debit','Transfer'] as $method)<option value="{{ $method }}" @selected(request('method') === $method)>{{ $method }}</option>@endforeach</select></div>
-                <div class="filter-field"><label class="sr-only" for="transaction-status-filter">Status transaksi</label><select id="transaction-status-filter" class="select-control" name="status"><option value="">Semua status</option><option value="completed" @selected(request('status') === 'completed')>Selesai</option></select></div>
-            </div>
-            <div class="filter-bar">
-                <div class="filter-field"><label for="from-date">Dari tanggal</label><input class="input-control" id="from-date" name="from" type="date" value="{{ request('from') }}"></div>
-                <div class="filter-field"><label for="to-date">Sampai tanggal</label><input class="input-control" id="to-date" name="to" type="date" value="{{ request('to') }}"></div>
-                <button class="btn btn-outline" type="submit"><x-icon name="calendar" /> Terapkan filter</button>
+                <div class="filter-field search-control"><x-icon name="search" /><input class="input-control" type="search" name="search" value="{{ request('search') }}" placeholder="Cari invoice..."></div>
+                <div class="filter-field"><label class="sr-only" for="method-filter">Metode</label><select id="method-filter" class="select-control" name="method"><option value="">Semua metode</option>@foreach(['Tunai','QRIS','Debit','Transfer'] as $method)<option value="{{ $method }}" @selected(request('method') === $method)>{{ $method }}</option>@endforeach</select></div>
+                <div class="filter-field"><label class="sr-only" for="transaction-status-filter">Status</label><select id="transaction-status-filter" class="select-control" name="status"><option value="">Semua status</option><option value="completed" @selected(request('status') === 'completed')>Selesai</option></select></div>
+                <div class="filter-field"><label class="sr-only" for="from-date">Dari</label><input class="input-control" id="from-date" name="from" type="date" value="{{ request('from') }}" placeholder="Dari"></div>
+                <div class="filter-field"><label class="sr-only" for="to-date">Sampai</label><input class="input-control" id="to-date" name="to" type="date" value="{{ request('to') }}" placeholder="Sampai"></div>
+                <button class="btn btn-outline" type="submit"><x-icon name="calendar" /></button>
                 <a class="btn btn-quiet" href="{{ route('transactions.index') }}">Reset</a>
             </div>
         </form>

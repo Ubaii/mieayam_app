@@ -126,7 +126,7 @@
                 </tr>
             </thead>
             <tbody>
-                @foreach($paymentMethods as $method)
+                @foreach($paymentMethods->take(2) as $method)
                 <tr>
                     <td>{{ $method->payment_method }}</td>
                     <td class="center">{{ number_format($method->transactions_count, 0, ',', '.') }}</td>
@@ -159,7 +159,7 @@
                 </tr>
             </thead>
             <tbody>
-                @foreach($bestSellers as $index => $menu)
+                @foreach($bestSellers->take(2) as $index => $menu)
                 <tr>
                     <td class="center">{{ $index + 1 }}</td>
                     <td>{{ $menu->name }}</td>
@@ -187,7 +187,7 @@
                 </tr>
             </thead>
             <tbody>
-                @foreach($sales as $i => $day)
+                @foreach($sales->take(7) as $i => $day)
                 <tr>
                     <td class="center">{{ $i + 1 }}</td>
                     <td>{{ $day['label'] }}</td>
