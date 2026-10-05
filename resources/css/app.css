@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
 @import 'tailwindcss';
 
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
@@ -6,12 +8,11 @@
 @source '../js/**/*.js';
 
 @theme {
-    --font-body: 'DM Sans';
-    --font-sans: var(--font-body), "Helvetica Neue", Arial, sans-serif;
+    --font-poppins: "Poppins", sans-serif;
 }
 
 :root {
-    font-family: var(--font-sans);
+    font-family: var(--font-poppins);
     color: #252d2b;
     background: #f7f9f8;
     font-synthesis: none;
