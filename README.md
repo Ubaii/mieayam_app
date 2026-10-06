@@ -1,58 +1,205 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 🍜 Mie Ayam Wengi 57
+### Sistem Management Kasir & Keuangan
 
 <p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+  <img src="https://img.shields.io/badge/Laravel-Framework-red?style=for-the-badge&logo=laravel" alt="Laravel">
+  <img src="https://img.shields.io/badge/PHP-8.x-blue?style=for-the-badge&logo=php" alt="PHP">
+  <img src="https://img.shields.io/badge/phpMyAdmin-Database-orange?style=for-the-badge&logo=phpmyadmin" alt="phpMyAdmin">
+  <img src="https://img.shields.io/badge/Status-Development-yellow?style=for-the-badge" alt="Status">
 </p>
 
-## About Laravel
+<p align="center">
+  <b>Aplikasi Management Kasir dan Keuangan Mie Ayam Wengi 57</b>
+  <br>
+  Dibangun untuk membantu proses transaksi, pengelolaan menu, dan monitoring penjualan secara lebih cepat dan terorganisir.
+</p>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+---
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## 📖 Tentang Project
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+**Mie Ayam Wengi 57** merupakan aplikasi berbasis web yang dibuat untuk membantu proses **management kasir dan keuangan** pada usaha Mie Ayam Wengi 57.
 
-## Learning Laravel
+Aplikasi ini dikembangkan menggunakan **Laravel** sebagai framework utama dan **phpMyAdmin/MySQL** sebagai sistem pengelolaan database.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Sebelum adanya aplikasi ini, proses transaksi dan perhitungan total pembelian masih dilakukan secara **manual**. Kondisi tersebut dapat menyebabkan proses pelayanan menjadi lebih lama serta meningkatkan risiko kesalahan dalam menghitung total pembayaran dan pencatatan transaksi.
 
-In addition, [Laracasts](https://laracasts.com) contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Dengan adanya aplikasi ini, proses kasir dan pencatatan penjualan dapat dilakukan secara **digital, cepat, dan terstruktur**.
 
-You can also watch bite-sized lessons with real-world projects on [Laravel Learn](https://laravel.com/learn), where you will be guided through building a Laravel application from scratch while learning PHP fundamentals.
+---
 
-## Agentic Development
+## 🎯 Latar Belakang
 
-Laravel's predictable structure and conventions make it ideal for AI coding agents like Claude Code, Cursor, and GitHub Copilot. Install [Laravel Boost](https://laravel.com/docs/ai) to supercharge your AI workflow:
+Dalam menjalankan usaha kuliner, proses transaksi merupakan salah satu bagian yang sangat penting.
 
-```bash
-composer require laravel/boost --dev
+Pada Mie Ayam Wengi 57, proses perhitungan total pembelian sebelumnya masih dilakukan secara manual. Kasir harus menghitung jumlah menu dan harga satu per satu untuk mendapatkan total pembayaran pelanggan.
 
-php artisan boost:install
-```
+Cara tersebut memiliki beberapa permasalahan, seperti:
 
-Boost provides your agent 15+ tools and skills that help agents build Laravel applications while following best practices.
+- ❌ Risiko kesalahan dalam menghitung total pembayaran.
+- ❌ Proses transaksi menjadi lebih lama.
+- ❌ Pencatatan transaksi masih kurang terstruktur.
+- ❌ Kesulitan dalam melihat riwayat penjualan.
+- ❌ Kesulitan dalam mengetahui jumlah penjualan dalam periode tertentu.
+- ❌ Pengelolaan data menu dan kategori belum terintegrasi.
 
-## Contributing
+Berdasarkan permasalahan tersebut, dibuatlah **Aplikasi Management Kasir & Keuangan Mie Ayam Wengi 57** untuk membantu proses operasional usaha agar menjadi lebih **efisien, terorganisir, dan mudah digunakan**.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+---
 
-## Code of Conduct
+## 🚀 Tujuan Aplikasi
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+Aplikasi ini dibuat dengan beberapa tujuan utama, yaitu:
 
-## Security Vulnerabilities
+1. Mempermudah proses transaksi pelanggan.
+2. Mengurangi risiko kesalahan dalam perhitungan pembayaran.
+3. Mempermudah pengelolaan data menu dan kategori.
+4. Menyimpan data transaksi secara terstruktur.
+5. Membantu pemilik usaha memantau penjualan.
+6. Menyediakan laporan penjualan secara lebih mudah.
+7. Meningkatkan efisiensi proses kerja kasir.
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+---
 
-## License
+## ✨ Fitur Aplikasi
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+### 📊 1. Dashboard
+
+Dashboard merupakan halaman utama yang memberikan gambaran singkat mengenai kondisi aplikasi dan aktivitas penjualan.
+
+Informasi yang dapat ditampilkan antara lain:
+
+- Ringkasan transaksi.
+- Informasi penjualan.
+- Jumlah menu.
+- Jumlah kategori.
+- Data statistik penjualan.
+
+---
+
+### 🧾 2. Kasir
+
+Fitur kasir digunakan untuk melakukan proses transaksi pembelian pelanggan.
+
+Fitur ini membantu kasir dalam:
+
+- Memilih menu yang dibeli.
+- Menentukan jumlah item.
+- Menghitung subtotal.
+- Menghitung total pembayaran secara otomatis.
+- Memproses transaksi pelanggan.
+- Menyimpan transaksi ke dalam database.
+
+> 💡 Dengan perhitungan otomatis, kasir tidak perlu lagi menghitung total pembelian secara manual.
+
+---
+
+### 🗂️ 3. Kategori
+
+Fitur kategori digunakan untuk mengelola kelompok atau jenis menu yang tersedia.
+
+Contohnya:
+
+- Mie Ayam
+- Minuman
+- Topping
+- Makanan
+- Menu lainnya
+
+Fitur kategori membantu membuat data menu menjadi lebih terstruktur dan mudah dikelola.
+
+---
+
+### 🍜 4. Menu
+
+Fitur menu digunakan untuk mengelola daftar makanan dan minuman yang tersedia di Mie Ayam Wengi 57.
+
+Data menu dapat mencakup:
+
+- Nama menu.
+- Kategori.
+- Harga.
+- Status menu.
+- Informasi menu lainnya.
+
+Dengan fitur ini, perubahan data menu dapat dilakukan dengan lebih mudah tanpa perlu mengubah data secara manual.
+
+---
+
+### 💳 5. Transaksi
+
+Fitur transaksi digunakan untuk melihat dan mengelola data transaksi yang telah dilakukan.
+
+Informasi transaksi dapat digunakan untuk mengetahui:
+
+- Nomor transaksi.
+- Tanggal transaksi.
+- Daftar menu yang dibeli.
+- Jumlah pembelian.
+- Total pembayaran.
+- Detail transaksi.
+
+Seluruh data transaksi tersimpan di dalam database sehingga dapat digunakan kembali untuk kebutuhan pencatatan dan laporan.
+
+---
+
+### 📈 6. Laporan Penjualan
+
+Fitur laporan penjualan digunakan untuk membantu pemilik usaha melihat aktivitas penjualan.
+
+Laporan dapat digunakan untuk mengetahui:
+
+- Total penjualan.
+- Jumlah transaksi.
+- Riwayat transaksi.
+- Data penjualan berdasarkan periode.
+- Rekap penjualan.
+
+Dengan adanya laporan ini, pemilik usaha dapat lebih mudah melakukan monitoring terhadap perkembangan penjualan.
+
+---
+
+## 🛠️ Teknologi yang Digunakan
+
+Project ini dibangun menggunakan beberapa teknologi berikut:
+
+| Teknologi | Keterangan |
+|---|---|
+| **Laravel** | Framework PHP yang digunakan untuk membangun aplikasi |
+| **PHP** | Bahasa pemrograman utama |
+| **MySQL** | Database yang digunakan untuk menyimpan data aplikasi |
+| **phpMyAdmin** | Tool untuk mengelola database MySQL |
+| **HTML** | Struktur halaman aplikasi |
+| **CSS** | Styling dan tampilan aplikasi |
+| **JavaScript** | Interaksi dan fungsi pada sisi client |
+
+---
+
+## 🏗️ Arsitektur Sederhana
+
+Secara umum, alur aplikasi dapat digambarkan sebagai berikut:
+
+```text
+                    ┌─────────────────────┐
+                    │    administrator    │
+                    └──────────┬──────────┘
+                               │
+                               ▼
+                    ┌─────────────────────┐
+                    │   Laravel Website   │
+                    └──────────┬──────────┘
+                               │
+              ┌────────────────┼────────────────┐
+              │                │                │
+              ▼                ▼                ▼
+        ┌──────────┐     ┌──────────┐    ┌────────────┐
+        │  Kasir   │     │  Menu &  │    │  Laporan   │
+        │          │     │ Kategori │    │ Penjualan  │
+        └────┬─────┘     └────┬─────┘    └─────┬──────┘
+             │                │                │
+             └────────────────┼────────────────┘
+                              ▼
+                    ┌─────────────────────┐
+                    │      MySQL DB       │
+                    │    phpMyAdmin       │
+                    └─────────────────────┘

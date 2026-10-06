@@ -559,7 +559,7 @@ button { cursor: pointer; }
 .delete-modal-content h3 {
     margin: 0 0 8px;
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 200;
 }
 
 .delete-modal-content p {
@@ -579,3 +579,4 @@ button { cursor: pointer; }
 .btn-danger:hover {
     background: #b91c1c;
 }
+
