@@ -203,5 +203,3 @@ Secara umum, alur aplikasi dapat digambarkan sebagai berikut:
                     │      MySQL DB       │
                     │    phpMyAdmin       │
                     └─────────────────────┘
-
-TEST TEST
