@@ -1,5 +1,4 @@
 @extends('layouts.app')
-
 @section('title', 'Riwayat Transaksi')
 
 @section('content')
@@ -121,7 +120,7 @@
                         <label for="method-filter">Metode Pembayaran</label>
                         <select id="method-filter" class="select-control" name="method">
                             <option value="">Semua metode</option>
-                            @foreach (['Tunai', 'QRIS', 'Debit', 'Transfer'] as $method)
+                            @foreach (['Tunai', 'QRIS'] as $method)
                                 <option value="{{ $method }}" @selected(request('method') === $method)>
                                     {{ $method }}
                                 </option>
