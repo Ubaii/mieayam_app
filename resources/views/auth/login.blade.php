@@ -59,8 +59,7 @@
                         </div>
                         <label class="login-remember"><input type="checkbox" name="remember" value="1"
                                 @checked(old('remember'))> Ingat saya</label>
-                        <button type="submit" class="bg-blue-400 text-white p-2 rounded-md button-submit" style="font-size: 14px;">Masuk ke
-                            dashboard</button>
+                        <button type="submit" class="btn btn-primary login-submit">Masuk ke dashboard</button>
                     </form>
                     @if ($registrationAvailable)
                         <p class="login-signup">Pertama kali menggunakan aplikasi? <a

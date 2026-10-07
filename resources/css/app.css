@@ -12,6 +12,10 @@
 }
 
 :root {
+    --teal: #2563eb;
+    --teal-dark: #1d4ed8;
+    --teal-pale: #dbeafe;
+    --line: #e5eae8;
     font-family: var(--font-poppins);
     color: #252d2b;
     background: #f7f9f8;
