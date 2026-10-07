@@ -52,9 +52,7 @@
     {{-- HAMBURGER --}}
     <button type="button"
         class="lg:hidden shrink-0 inline-flex items-center justify-center w-[40px] h-[40px] rounded-lg bg-transparent border-0 text-[#374151] hover:bg-gray-100 active:bg-gray-200"
-        aria-label="Toggle navigasi"
-        aria-expanded="false"
-        data-sidebar-open>
+        aria-label="Toggle navigasi" aria-expanded="false" data-sidebar-open>
 
         <div class="hamburger">
             <span></span>
@@ -66,7 +64,8 @@
     {{-- DESKTOP --}}
     <div class="hidden lg:block fixed top-0 mr-2 right-0 z-[60]">
         <div class="flex flex-col items-end text-right pr-6 pt-4">
-            <p class="text-[14px] font-bold tracking-[.04em] text-[#1f2937] whitespace-nowrap">MIE AYAM WENGI'57 <span class="ml-[6px]"> · {{ auth()->user()->isAdmin() ? 'Administrator' : 'Kasir' }} </span> </p>
+            <p class="text-[14px] font-bold tracking-[.04em] text-[#1f2937] whitespace-nowrap">MIE AYAM WENGI'57 <span
+                    class="ml-[6px]"> · {{ auth()->user()->isAdmin() ? 'Administrator' : 'Kasir' }} </span> </p>
             <p class="text-[12px] mt-1 text-gray-500 whitespace-nowrap"> {{ now()->translatedFormat('l, d F Y') }} </p>
         </div>
     </div>
