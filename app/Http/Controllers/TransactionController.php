@@ -40,7 +40,7 @@ class TransactionController extends Controller
     {
         $filters = $request->validate([
             'search' => ['nullable', 'string', 'max:100'],
-            'method' => ['nullable', Rule::in(['Tunai', 'QRIS', 'Debit', 'Transfer'])],
+            'method' => ['nullable', Rule::in(['Tunai', 'QRIS'])],
             'status' => ['nullable', Rule::in(['completed'])],
             'from' => ['nullable', 'date'],
             'to' => ['nullable', 'date', 'after_or_equal:from'],
@@ -64,7 +64,7 @@ class TransactionController extends Controller
     {
         $attributes = $request->validate([
             'table_id' => ['nullable', 'integer', Rule::exists('cafe_tables', 'id')->where('is_active', true)->where('status', 'available')],
-            'payment_method' => ['required', Rule::in(['Tunai', 'QRIS', 'Debit', 'Transfer'])],
+            'payment_method' => ['required', Rule::in(['Tunai', 'QRIS'])],
             'amount_paid' => ['required', 'integer', 'min:0', 'max:1000000000'],
             'note' => ['nullable', 'string', 'max:1000'],
             'items' => ['required', 'array', 'min:1', 'max:100'],
